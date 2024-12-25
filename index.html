@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AZ Future</title>
+        <link rel="icon" href="./asserts/curser/plane-curser.svg">
+
+        <!-- css imports -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="stylesheet"href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+        
+        <!-- login -->
+        <div class="login flex ">
+
+            <div class="sign-btn  fas fa-times hoverable" onclick="hideSign('.login')"></div>
+
+            <form class="padding" method="get" name="login">
+                <p class="title">SIGNIN</p>
+                <input class="inputbox" type="email" name="email-user"  placeholder="Please , Enter Your Email Here . . .">
+                <input class="inputbox" type="password" name="password-user"  placeholder="Please , Enter Your Password Here . . .">
+                <input type="submit" value="Login" class="inputbox hover-sign">
+                <div><input   type="checkbox"  id="remember-me"><label class="hover-sign" for="remember-me"> Remember Me</label></div>
+                <div>Forget Password? <a class="hover-sign" href="" >Click Here</a></div>
+                <div>Don't Have Acount? <a class="hover-sign" href="">Sign Up</a></div>
+                <div class="logo logo-sign "><p><span>A</span>z <span>F</span>UTURE<span> T</span>RAVEL</p></div>
+            </from>
+            
+        </div><!-- end login -->
+
+        <!-- navbar header-->
+        <header class="container header ">
+
+            <!-- container -->
+            <div class="top-menu center child flex">
+
+                <!-- navbar button -->
+                <div class="nav-btn" onclick="showNav()">
+                    <div class="line-1">
+                        <span class="line line-left corer-1l"></span>
+                        <span id="corer-1r" class="line line-rigth corer-1r"></span>
+                    </div>
+                    <div class="line-2">
+                        <span class="line line-left"></span>
+                        <span class="line line-rigth"> </span>
+                    </div>
+                    <div class="line-3">
+                        <span id="corer-3l" class="line line-left corer-3l"></span>
+                        <span class="line line-rigth corer-3r"> </span>
+                    </div>
+                </div>
+
+                <!-- logo website -->
+                <div class="logo"><span>A</span>z <span>F</span>UTURE<span> T</span>RAVEL</div>
+
+
+                <!-- navbar in header section -->
+                <nav class="nav">
+                    <div class="nav-container">
+                        <a class="hoverable"  href="#home">home</a>
+                        <a class="hoverable" href="#packages">packages</a>
+                        <a class="hoverable" href="#services">services</a>
+                        <a class="hoverable" href="#gallary">gallary</a>
+                        <a class="hoverable" href="#review">Review</a>
+                        <a class="hoverable" href="#contact">contact</a>
+                    </div>
+                </nav>
+
+                <!-- icons in header section -->
+                <div class="icons">
+                    <div class="fas fa-search search-icon hoverable" onclick="showBar(this, '.header')" ></div>
+                    <div class="fas fa-user login-icon hoverable" onclick="showSign('.login')"></div>
+                </div> 
+
+            </div>  
+
+            <!-- search section -->
+            <form id="form" action="" name="search" class="search center">
+                <input class="search-bar padding" type="search" name="" id="search-bar" placeholder="What are you Looking . . ."> 
+                <label class="fas fa-search search-icon hoverable" for="search-bar"></label>
+            </form>
+        </header><!-- navbar header-->
+
+        <!-- landing section all width -->
+        <div class="landing flex" id="home">
+
+            <video class="background-video" loop autoplay muted>
+                <source src="./asserts/vide_0.mp4" type="video/mp4"></source>
+            </video>
+
+            <!-- content -->
+            <div class="content flex-c">
+
+                <!-- two  text -->
+                <div class="text-landing" data-aos="fade-right" data-aos-delay="500" data-aos-easing="ease-out-cubic">
+                    <p class="top-text">WORLD WIDE MAKE TRAVEL EASY</p>
+                    <p class="low-text">Discover New Places With Us, Adventure Awaits</p>
+                    <button>Discover More</button>
+                </div>
+
+                <!-- video controller -->
+                <div class="vid-btn-container flex" data-aos="fade-left" data-aos-delay="500" data-aos-easing="ease-out-cubic">
+                    <div class="vid-btn"></div>
+                    <div class="vid-btn"></div>
+                    <div class="vid-btn"></div>
+                </div>
+
+            </div><!-- content -->
+        
+        </div>  <!-- end landing -->
+
+        <!-- start packages section -->
+        <div class="padding packages section" id="packages">
+            <!-- title  -->
+            <div class="title center" data-aos="fade-down-right" data-aos-easing="ease-out-cubic">
+                <span class="flex-center-r letter">P</span> 
+                <span class="flex-center-r letter">A</span>
+                <span class="flex-center-r letter">C</span>
+                <span class="flex-center-r letter">K</span>
+                <span class="flex-center-r letter">A</span>
+                <span class="flex-center-r letter">G</span> 
+                <span class="flex-center-r letter">E</span>
+                <span class="flex-center-r letter">S</span>
+            </div>
+            <!-- content 1 cards -->
+            <div class="content-section center">
+                <!-- trips -->
+
+                <!-- card 1 -->
+                <div class="card center">
+                    <img src="./asserts/p-1.jpg" alt="trip-photo">
+                    <div class="name-trip"><i class="fas fa-map-marker-alt"></i> Korea </div>
+                    <p>Lorem Ipsum, Dolor Sit Amet Conseetur Adipisicing Elit. Nam!</p>
+                    <div class="rate">
+                        <i class="class="fas fa-star""></i>
+                        <i class="class="fas fa-star""></i>
+                        <i class="class="fas fa-star""></i>
+                        <i class="class="fas fa-star""></i>
+                        <i class="class="fas fa-star""></i>
+                        <i class="class="fas fa-star""></i>
+                    </div>
+                    <p class="price card-big-sale">
+                        <span class="now">$90</span>
+                        <span class="old">$120</span>
+                    </p>
+                    <button class="book">Book Now</button>
+                </div>
+
+                <!-- card 2 -->
+                <div class="card center card-big-sale">
+                    <img src="./asserts/p-2.jpg" alt="trip-photo">
+                    <div class="name-trip"><i class="fas fa-map-marker-alt"></i> German</div>
+                    <p>Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Nam!</p>
+                    <div class="rate">
+                        <i class="class="fas fa-star""></i>
+                        <i class="class="fas fa-star""></i>
+                        <i class="class="fas fa-star""></i>
+                        <i class="class="fas fa-star""></i>
+                        <i class="class="fas fa-star""></i>
+                        <i class="class="fas fa-star""></i>
+                    </div>
+                    <p class="price">
+                        <span class="now">$120</span>
+                        <span class="old">$200</span>
+                    </p>
+                    <button class="book">Book Now</button>
+                </div>
+
+                <!-- card 3 -->
+                <div class="card center">
+                    <img src="./asserts/p-3.jpg" alt="trip-photo">
+                    <div class="name-trip"><i class="fas fa-map-marker-alt"></i> Italy</div>
+                    <p>Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Nam!</p>
+                    <div class="rate">
+                        <i class="class="fas fa-star""></i>
+                        <i class="class="fas fa-star""></i>
+                        <i class="class="fas fa-star""></i>
+                        <i class="class="fas fa-star""></i>
+                        <i class="class="fas fa-star""></i>
+                        <i class="class="fas fa-star""></i>
+                    </div>
+                    <p class="price">
+                        <span>$180</span>
+                    </p>
+                    <button class="book">Book Now</button>
+                </div>
+
+                <!-- card 4 -->
+                <div class="card card-best-seller center">
+                    <img src="./asserts/p-4.jpg" alt="trip-photo">
+                    <div class="name-trip"><i class="fas fa-map-marker-alt"></i> Hawaii</div>
+                    <p>Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Nam!</p>
+                    <div class="rate">
+                        <i class="class="fas fa-star""></i>
+                        <i class="class="fas fa-star""></i>
+                        <i class="class="fas fa-star""></i>
+                        <i class="class="fas fa-star""></i>
+                        <i class="class="fas fa-star""></i>
+                        <i class="class="fas fa-star""></i>
+                    </div>
+                    <p class="price">
+                        <span>$210</span>
+                    </p>
+                    <button class="book">Book Now</button>
+                </div>
+
+                <!-- card 5 -->
+                <div class="card card-big-sale center">
+                    <img src="./asserts/p-5.jpg" alt="trip-photo">
+                    <div class="name-trip"><i class="fas fa-map-marker-alt"></i> Japan</div>
+                    <p>Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Nam!</p>
+                    <div class="rate">
+                        <i class="class="fas fa-star""></i>
+                        <i class="class="fas fa-star""></i>
+                        <i class="class="fas fa-star""></i>
+                        <i class="class="fas fa-star""></i>
+                        <i class="class="fas fa-star""></i>
+                        <i class="class="fas fa-star""></i>
+                    </div>
+                    <p class="price">
+                        <span class="now">$110</span>
+                        <span class="old">$270</span>
+                    </p>
+                    <button class="book">Book Now</button>
+                </div>
+
+                <!-- card 6 -->
+                <div class="card card-best-seller center">
+                    <img src="./asserts/p-6.jpg" alt="trip-photo">
+                    <div class="name-trip"><i class="fas fa-map-marker-alt"></i> Mixicio</div>
+                    <p>Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Nam!</p>
+                    <div class="rate">
+                        <i class="class="fas fa-star""></i>
+                        <i class="class="fas fa-star""></i>
+                        <i class="class="fas fa-star""></i>
+                        <i class="class="fas fa-star""></i>
+                        <i class="class="fas fa-star""></i>
+                        <i class="class="fas fa-star""></i>
+                    </div>
+                    <p class="price">
+                        <span>$150</span>
+                    </p>
+                    <button class="book">Book Now</button>
+                </div>
+        
+            </div>
+        </div>
+
+        <!-- start now section -->
+        <div class="services section py" id="services">
+            <!-- servses  title -->
+            <div class="title center" data-aos="fade-down-right" data-aos-easing="ease-out-cubic">
+                <span class="flex-center-r letter">S</span> 
+                <span class="flex-center-r letter">E</span>
+                <span class="flex-center-r letter">R</span>
+                <span class="flex-center-r letter">V</span>
+                <span class="flex-center-r letter">I</span>
+                <span class="flex-center-r letter">C</span> 
+                <span class="flex-center-r letter">E</span>
+                <span class="flex-center-r letter">S</span>
+            </div>
+
+            <!-- content 2 -->
+            <div class="content-section center py">
+
+                <!-- box-1 -->
+                <div class="box-package">
+                    <i class="fas fa-hotel "></i>
+                    <p class="head-txt">affordable hotel</p>
+                    <p class="details">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero maxime, tenetur eaque suscipit adipisci illo! Debitis tempora temporibus neque repudiandae!</p>
+                </div>
+
+                <!-- box-2 -->
+                <div class="box-package">
+                    <i class="fas fa-utensils "></i>
+                    <p class="head-txt">affordable hotel</p>
+                    <p class="details">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero maxime, tenetur eaque suscipit adipisci illo! Debitis tempora temporibus neque repudiandae!</p>
+                </div>
+
+                <!-- box-3 -->
+                <div class="box-package">
+                    <i class="fas fa-bullhorn "></i>
+                    <p class="head-txt">affordable hotel</p>
+                    <p class="details">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero maxime, tenetur eaque suscipit adipisci illo! Debitis tempora temporibus neque repudiandae!</p>
+                </div>
+
+                <!-- box-4 -->
+                <div class="box-package">
+                    <i class="fas fa-globe-asia "></i>
+                    <p class="head-txt">affordable hotel</p>
+                    <p class="details">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero maxime, tenetur eaque suscipit adipisci illo! Debitis tempora temporibus neque repudiandae!</p>
+                </div>
+
+                <!-- box-5 -->
+                <div class="box-package">
+                    <i class="fas fa-plane "></i>
+                    <p class="head-txt">affordable hotel</p>
+                    <p class="details">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero maxime, tenetur eaque suscipit adipisci illo! Debitis tempora temporibus neque repudiandae!</p>
+                </div>
+
+                <!-- box-6 -->
+                <div class="box-package">
+                    <i class="fas fa-hiking "></i>
+                    <p class="head-txt">affordable hotel</p>
+                    <p class="details">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero maxime, tenetur eaque suscipit adipisci illo! Debitis tempora temporibus neque repudiandae!</p>
+                </div>
+        </div>
+
+
+        <!-- start now section -->
+        <div class="gallary section" id="gallary">
+            <!-- servses  title -->
+            <div class="title center" data-aos="fade-down-right" data-aos-easing="ease-out-cubic">
+                <span class="flex-center-r letter">G</span> 
+                <span class="flex-center-r letter">A</span>
+                <span class="flex-center-r letter">L</span>
+                <span class="flex-center-r letter">L</span>
+                <span class="flex-center-r letter">A</span>
+                <span class="flex-center-r letter">R</span> 
+                <span class="flex-center-r letter">Y</span>
+            </div>
+    
+            <!-- content 2 -->
+            <div class="content-section center">
+    
+                <!-- box-1 -->
+                <div class="gallary-img" data-aos="zoom-in" data-aos-offset="50" data-aos-easing="ease-in-sine">
+                    <img src="./asserts/images/g-1.jpg">
+                    <div class="gallary-img-overlay">
+                        <p class="gallary-txt">German Tour</p>
+                        <p>2/8/2025</p>
+                    </div>
+                </div>
+
+                <!-- box-2 -->
+                <div class="gallary-img" data-aos="zoom-in" data-aos-offset="50" data-aos-easing="ease-in-sine">
+                    <img src="./asserts/images/g-2.jpg">
+                    <div class="gallary-img-overlay">
+                    <p class="gallary-txt">Italy Tour</p>
+                    <p>21/2/2025</p>
+                    </div>
+                </div>
+
+                <!-- box-3 -->
+                <div class="gallary-img" data-aos="zoom-in" data-aos-offset="50" data-aos-easing="ease-in-sine">
+                    <img src="./asserts/images/g-3.jpg">
+                    <div class="gallary-img-overlay">
+                    <p class="gallary-txt">Egypt Tour</p>
+                    <p>20/8/2025</p>
+                    </div>
+                </div>
+
+                <!-- box-4 -->
+                <div class="gallary-img" data-aos="zoom-in" data-aos-offset="50" data-aos-easing="ease-in-sine">
+                    <img src="./asserts/images/g-4.jpg">
+                    <div class="gallary-img-overlay">
+                    <p class="gallary-txt">German Tour</p>
+                    <p>2/4/2025</p>
+                    </div>
+                </div>
+
+                <!-- box-5 -->
+                <div class="gallary-img" data-aos="zoom-in" data-aos-offset="50" data-aos-easing="ease-in-sine">
+                    <img src="./asserts/images/g-5.jpg">
+                    <div class="gallary-img-overlay">
+                    <p class="gallary-txt">U.S Tour</p>
+                    <p>2/8/2025</p>
+                    </div>
+                </div>
+
+                <!-- box-6 -->
+                <div class="gallary-img" data-aos="zoom-in" data-aos-offset="50" data-aos-easing="ease-in-sine">
+                    <img src="./asserts/images/g-6.jpg">
+                    <div class="gallary-img-overlay">
+                    <p class="gallary-txt">Italy Tour</p>
+                    <p>1/6/2025</p>
+                    </div>
+                </div>
+
+                <!-- box-7 -->
+                <div class="gallary-img" data-aos="zoom-in" data-aos-offset="50" data-aos-easing="ease-in-sine">
+                    <img src="./asserts/images/g-7.jpg">
+                    <div class="gallary-img-overlay">
+                    <p class="gallary-txt">Italy Tour</p>
+                    <p>1/6/2025</p>
+                    </div>
+                </div>
+
+                <!-- box-8 -->
+                <div class="gallary-img" data-aos="zoom-in" data-aos-offset="50" data-aos-easing="ease-in-sine">
+                    <img src="./asserts/images/g-8.jpg">
+                    <div class="gallary-img-overlay">
+                    <p class="gallary-txt">Italy Tour</p>
+                    <p>1/6/2025</p>
+                    </div>
+                </div>
+    
+        </div>
+
+        <!-- review us section -->
+        <div class="section review" id="review">
+            <!-- review us title -->
+            <div class="title center" data-aos="fade-down-right" data-aos-easing="ease-out-cubic">
+                <span class="flex-center-r letter">R</span> 
+                <span class="flex-center-r letter">E</span>
+                <span class="flex-center-r letter">V</span>
+                <span class="flex-center-r letter">I</span>
+                <span class="flex-center-r letter">E</span>
+                <span class="flex-center-r letter">W</span> 
+            </div>
+            <div class="content-section center padding">
+                <div class="swiper review-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="review-item">
+                                <img src="./asserts/pic1.jpg" alt="">
+                                <h3>Peter Mahmoud</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores totam, voluptatem non debitis illum tenetur cum quasi corporis veritatis unde.</p>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review-item">
+                                <img src="./asserts/pic3.jpg" alt="">
+                                <h3>Mohmed Ahmed</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores totam, voluptatem non debitis illum tenetur cum quasi corporis veritatis unde.</p>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review-item">
+                                <img src="./asserts/pic4.jpg" alt="">
+                                <h3>Hany Ahmed</h3>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores totam, voluptatem non debitis illum tenetur cum quasi corporis veritatis unde.</p>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+        </div>
+
+        <!-- contact us section -->
+        <div class="contact-us section py" id="contact">
+            <!-- contact us title -->
+            <div class="title center" data-aos="fade-down-right" data-aos-easing="ease-out-cubic">
+                <span class="flex-center-r letter">C</span> 
+                <span class="flex-center-r letter">O</span>
+                <span class="flex-center-r letter">N</span>
+                <span class="flex-center-r letter">T</span>
+                <span class="flex-center-r letter">A</span>
+                <span class="flex-center-r letter">C</span> 
+                <span class="flex-center-r letter">T</span>
+                <span class="flex-center-r letter">U</span> 
+                <span class="flex-center-r letter">S</span>
+            </div>
+
+            <!-- container -->
+            <div class="flex content-section container center contact-us-content">
+
+                <div>
+                    <img src="asserts/contact-img.svg" alt="">
+                </div>
+
+                <form action="">
+
+                    <div class="flex">
+                        <input class="inputBox" type="text" placeholder="name">
+                        <input class="inputBox" type="email" placeholder="email">
+                    </div>
+
+                    <div class="flex">
+                        <input class="inputBox" type="number" placeholder="number">
+                        <input class="inputBox" type="text" placeholder="subject">
+                    </div>
+
+                    <textarea class="textarea" id="" cols="30" rows="10" placeholder="message"></textarea>
+                    <input type="submit" class="btn p-3" value="send message">
+                </form>
+
+            </div>
+            
+        </div>
+
+        <!-- footer section  -->
+        <div class="footer">
+
+            <!-- links and about us And branchs -->
+            <div class="navs flex">
+                <div class="about"> 
+                    <p class="head">ABOUT US</p>alias voluptatum! Harum pariat Laudantium pariatur libero excepturi, accusantium quae ipsum quaerat nam. Vitae.
+                </div>
+                
+                <div class="links flex-c">
+                    <p class="head">FOLLOW US</p>
+                    <a  href="#">facebook</a>
+                    <a  href="#">instagram</a>
+                    <a  href="#">twitter</a>
+                    <a  href="#">linkedin</a>
+                </div>
+
+                <div class="branch">
+                    <p class="head">BRANCHS</p>
+                    <p class="city selected">Cairo</p>
+                    <p class="city">Alexandria</p>
+                    <p class="city">Tanta</p>
+                </div>
+
+            </div>
+            <br>
+            <p class="copyright">Created By <i class="far fa-copyright"></i><span class="myname">AbdElRahman Ahmed Azzam</span> All Right Reserved</p>
+        </div>
+
+        <!-- js imports -->
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script src="./index.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
+    </body>
+
+</html>
